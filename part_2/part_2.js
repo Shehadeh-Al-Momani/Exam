@@ -17,7 +17,7 @@ Q4) What is the query for deleting a database called `meraki`?
 DROP DATABASE meraki
 
 Q5) What is the query for displaying all the tables for a database called `meraki`?
-
+SHOW TABLES 
 
 Q6) What is the query for displaying the columns of a table called `users`?
 
