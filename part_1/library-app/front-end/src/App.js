@@ -20,11 +20,3 @@ const App = () => {
 
 export default App;
 
-/*
-
-
-Q9) When the `submit` button is clicked (from Q6) it should add a new book in the database, by sending a request to the correct endpoint in the backend.
-
-Q10) When rendering the book list (from Q7) add a delete button next to each book, that when clicked will delete the corresponding book from the database and the state.
-
-*/
