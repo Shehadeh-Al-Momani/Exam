@@ -20,6 +20,9 @@ signture
 
 Q4) Name three types of express middle-wares.
 
+bult-in middleware
+error handler middleware
+router-level middleware
 
 Q5) What is the `effect` hook used for in react?
 
