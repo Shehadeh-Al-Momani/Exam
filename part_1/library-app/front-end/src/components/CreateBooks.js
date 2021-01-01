@@ -3,11 +3,24 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import axios from "axios";
 
 const CreateBook = () => {
-const [title,setTitle] = useState('');
-const [author,setAuthor] = useState('');
-const [pages,setPages] = useState();
-const [publisher,setPublisher] = useState('');
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [pages, setPages] = useState();
+  const [publisher, setPublisher] = useState('');
 
+  useEffect(() => { add() }, [])
+
+
+  add = () => {
+    axios
+      .post('http://localhost:3000/books', { title, author, pages, publisher })
+      .then((response) => {
+        console.log('added')
+      })
+      .catch((err) => {
+        console.log('ERR: ', err);
+      });
+  };
   return (
     <div>
       <input
