@@ -40,7 +40,8 @@ use media queries
 
 Q8) Name two of mongoose middle-wares and explain what they are used for
 
-
+1. pre hook :its uses to excute before save or another action 
+2. post hook : its uses to excute after save or another action 
 Q9) What is the difference between authentication and authorization?
 
 
