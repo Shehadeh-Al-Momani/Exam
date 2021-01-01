@@ -14,7 +14,7 @@ Q3) What is the query for creating a new database called `meraki`?
 CREATE DATABASE meraki
 
 Q4) What is the query for deleting a database called `meraki`?
-
+DROP DATABASE meraki
 
 Q5) What is the query for displaying all the tables for a database called `meraki`?
 
