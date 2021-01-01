@@ -2,12 +2,15 @@ import React, { useState,useEffect } from 'react';
 import { BrowserRouter as Router , Route } from 'react-router-dom';
 import axios from "axios";
 import './App.css';
+import CreateBook from './components/CreateBooks';
+import AllBooks from './components/AllBooks';
 
 const App = ()=> {
 
   return(
       <Router>
-        <Route exact path = '/library/create_book'></Route>
+        <Route exact path = '/library/create_book'> <CreateBook></CreateBook></Route>
+        <Route exact path = '/library/create_book'> <AllBooks></AllBooks></Route>
       </Router >
     );
  
@@ -16,9 +19,6 @@ const App = ()=> {
 export default App;
 
 /*
-
-Q6) Add a frontend route `/library/create_book` to render the inputs that correspond to the book's attributes 
-and a `submit` button (without functionality).
 
 Q7) Add a frontend route `/library` that will render all the books (title and author) from the database.
 
