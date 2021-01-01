@@ -5,7 +5,7 @@ PART 3 [General Information]:
 Type the correct answer below each question:
 
 Q1) Why do we use joins in SQL?
-
+ we uses joins to combine rows from more than one table by related column between tables
 
 Q2) Name three types of relationships in databases.
 
