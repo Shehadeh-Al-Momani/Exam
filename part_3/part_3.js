@@ -50,4 +50,5 @@ authorization : accept or not accept permissions such as add roles for users
 
 Q10) Why do we save some information as an environment variable (in .env file)?
 
+we use environment variable for more secure and and save a sensitive info 
 */
