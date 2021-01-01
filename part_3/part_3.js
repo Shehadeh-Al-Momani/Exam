@@ -30,6 +30,7 @@ re-render objects, elements when change element and when occure update in elemen
 
 Q6) What is the `state` hook used for in react?
 
+uses to define new state in component and it can be uses in class and functions component without having to use classes
 
 Q7) List three thing you can use to create a responsive web application.
 
