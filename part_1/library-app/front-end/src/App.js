@@ -10,7 +10,7 @@ const App = ()=> {
   return(
       <Router>
         <Route exact path = '/library/create_book'> <CreateBook></CreateBook></Route>
-        <Route exact path = '/library/create_book'> <AllBooks></AllBooks></Route>
+        <Route exact path = '/library'> <AllBooks></AllBooks></Route>
       </Router >
     );
  
@@ -19,8 +19,6 @@ const App = ()=> {
 export default App;
 
 /*
-
-Q7) Add a frontend route `/library` that will render all the books (title and author) from the database.
 
 Q8) Add a frontend route `/library/:book_id` that will render a specific book details from the database.
 
