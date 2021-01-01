@@ -1,26 +1,27 @@
-import React, { useState,useEffect } from 'react';
-import { BrowserRouter as Router , Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import axios from "axios";
 import './App.css';
 import CreateBook from './components/CreateBooks';
 import AllBooks from './components/AllBooks';
+import Book from './components/Book';
 
-const App = ()=> {
+const App = () => {
 
-  return(
-      <Router>
-        <Route exact path = '/library/create_book'> <CreateBook></CreateBook></Route>
-        <Route exact path = '/library'> <AllBooks></AllBooks></Route>
-      </Router >
-    );
- 
+  return (
+    <Router>
+      <Route exact path='/library/create_book'> <CreateBook></CreateBook></Route>
+      <Route exact path='/library'> <AllBooks></AllBooks></Route>
+      <Route exact path='/library/:book_id' render={(props) => { <Book {...props}/> }} />
+    </Router >
+  );
+
 }
 
 export default App;
 
 /*
 
-Q8) Add a frontend route `/library/:book_id` that will render a specific book details from the database.
 
 Q9) When the `submit` button is clicked (from Q6) it should add a new book in the database, by sending a request to the correct endpoint in the backend.
 

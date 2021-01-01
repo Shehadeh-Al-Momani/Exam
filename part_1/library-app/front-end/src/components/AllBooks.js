@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Link } from 'react-router-dom';
 import axios from "axios";
 
 const CreateBook = () => {
@@ -10,7 +10,7 @@ const CreateBook = () => {
     axios
       .get('http://localhost:3000/books')
       .then((res) => {
-        this.setBooks({ tasks: res.data });
+        setBooks( res.data);
       })
       .catch((err) => {
         console.log('ERR: ', err);
@@ -18,18 +18,18 @@ const CreateBook = () => {
   };
 }
 return (
-  <div>
+  <Router>
     {
       books.map((item, i) => {
-        return <div key={i}>
+        return <Link to={`library/${id}`} key={i}>
           <div>
             <div>{item.title}</div>
             <div>{item.author}</div>
           </div>
-        </div>
+        </Link>
       })
     }
-  </div >
+  </Router >
 );
 
 export default CreateBook;
