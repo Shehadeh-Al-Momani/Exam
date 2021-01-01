@@ -9,6 +9,9 @@ Q1) Why do we use joins in SQL?
 
 Q2) Name three types of relationships in databases.
 
+one to one 
+one to many 
+many to mant 
 
 Q3) What are the main three sections of a JWT?
 
