@@ -30,7 +30,7 @@ UPDATE users SET name="SC"
 WHERE email = `info@meraki-academy.org`;
 
 Q9) What is the query to delete a user that has `info@meraki-academy.org` as an email?
-
+DELETE FROM users WHERE email = `info@meraki-academy.org`;
 
 Q10) What is the query to perform a left join on two tables (users, posts) depending on the user_id? (user_id is a FK in `posts` table)
 
