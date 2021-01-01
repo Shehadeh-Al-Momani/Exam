@@ -20,10 +20,10 @@ Q5) What is the query for displaying all the tables for a database called `merak
 SHOW TABLES 
 
 Q6) What is the query for displaying the columns of a table called `users`?
-DESCRIPE users
+DESCRIBE users
 
 Q7) What is the query to insert information into a table called `users` that has four columns (name, email, password, age)?
-
+INSERT INTO users (name, email, password, age) VALUES ("S",'@','P',24)
 
 Q8) What is the query to update the `name` of a user that has `info@meraki-academy.org` as an email?
 
