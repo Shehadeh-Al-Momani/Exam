@@ -34,6 +34,9 @@ uses to define new state in component and it can be uses in class and functions 
 
 Q7) List three thing you can use to create a responsive web application.
 
+use flexbox 
+use grid 
+use media queries
 
 Q8) Name two of mongoose middle-wares and explain what they are used for
 
