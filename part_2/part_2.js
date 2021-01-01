@@ -33,7 +33,7 @@ Q9) What is the query to delete a user that has `info@meraki-academy.org` as an 
 DELETE FROM users WHERE email = `info@meraki-academy.org`;
 
 Q10) What is the query to perform a left join on two tables (users, posts) depending on the user_id? (user_id is a FK in `posts` table)
-
+SELECT * FROM users LEFT JOIN posts ON users.id = posts.user_id
 
 Q11) What is the query to get all the users that their age ranges from 20-30 from the `users` table?
 
