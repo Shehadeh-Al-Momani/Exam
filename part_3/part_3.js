@@ -26,6 +26,7 @@ router-level middleware
 
 Q5) What is the `effect` hook used for in react?
 
+re-render objects, elements when change element and when occure update in element , object 
 
 Q6) What is the `state` hook used for in react?
 
