@@ -11,7 +11,7 @@ Q2) What is the query for using a specific database?
 USE DATABASE
 
 Q3) What is the query for creating a new database called `meraki`?
-
+CREATE DATABASE meraki
 
 Q4) What is the query for deleting a database called `meraki`?
 
