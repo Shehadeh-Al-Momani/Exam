@@ -19,7 +19,7 @@ mainRouter.get('/books', (req, res) => {
     })
 })
 
-mainRouter.post('/books/:book_id', (req, res) => {
+mainRouter.get('/books/:book_id', (req, res) => {
     const { book_id } = req.params;
     const query = `SELECT * FROM books WHERE id = ?`;
     const data = book_id;
@@ -29,9 +29,17 @@ mainRouter.post('/books/:book_id', (req, res) => {
     })
 })
 
+mainRouter.delete('/books/:book_id', (req, res) => {
+    const { book_id } = req.params;
+    const query = `DELETE FROM books WHERE id = ?`;
+    const data = book_id;
+    db.query(query, data, (err, result) => {
+        if (err) throw err;
+        res.json(result);
+    })
+})
 
 /*
-Q4) Create an API `/books/:book_id` to get a specific book from the database.
 
 Q5) Create an API `/books/:book_id` to delete a specific book from the database
 
