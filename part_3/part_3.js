@@ -42,8 +42,11 @@ Q8) Name two of mongoose middle-wares and explain what they are used for
 
 1. pre hook :its uses to excute before save or another action 
 2. post hook : its uses to excute after save or another action 
+
 Q9) What is the difference between authentication and authorization?
 
+authentication : varify a creditinals of users such as login procces varify if user valid or not 
+authorization : accept or not accept permissions such as add roles for users 
 
 Q10) Why do we save some information as an environment variable (in .env file)?
 
