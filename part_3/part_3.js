@@ -14,7 +14,9 @@ one to many
 many to mant 
 
 Q3) What are the main three sections of a JWT?
-
+head 
+pyloads
+signture
 
 Q4) Name three types of express middle-wares.
 
