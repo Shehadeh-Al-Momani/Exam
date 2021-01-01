@@ -5,7 +5,7 @@ PART 2 [SQL Queries]:
 Type the correct SQL query below every question:
 
 Q1) What is the query for displaying all the databases?
-
+SHOW DATABASES 
 
 Q2) What is the query for using a specific database?
 
